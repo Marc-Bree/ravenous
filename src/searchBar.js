@@ -1,4 +1,4 @@
-import React from 'react';
+import './searchBar.css';
 
 function SearchBar() {
   const options = {
@@ -19,8 +19,8 @@ function SearchBar() {
         {sortOptions()}
       </div>
       <div className="inputField">
-        <input placeholder="Business" />
-        <input placeholder="Where" />
+        <input className="input" placeholder="Business" />
+        <input className="input" placeholder="Where" />
       </div>
       <div className="submitField">
         <button>Search</button>

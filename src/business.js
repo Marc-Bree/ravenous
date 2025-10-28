@@ -1,4 +1,4 @@
-import React from 'react';
+import './business.css';
 
 function Business({ data }){
   return (
@@ -6,12 +6,22 @@ function Business({ data }){
       <div className="businessImg">
         <img src={data.imageSrc} alt={data.name} />
       </div>
-      <h2>{data.name}</h2>
-      <p>{data.address}</p>
-      <p>{data.city}, {data.state} {data.zipCode}</p>
-      <p>{data.category}</p>
-      <p>Rating: {data.rating}</p>
-      <p>{data.reviewCount} reviews</p>
+
+      <h2 className="businessTitle">{data.name}</h2>
+
+      <div className="businessRow">
+        <div className="left">{data.category}</div>
+      </div>
+
+      <div className="businessRow">
+        <div className="left">{data.address}</div>
+        <div className="right">Rating: {data.rating}</div>
+      </div>
+
+      <div className="businessRow">
+        <div className="left">{data.city}, {data.state} {data.zipCode}</div>
+        <div className="right">{data.reviewCount} reviews</div>
+      </div>
     </div>
   );
 }

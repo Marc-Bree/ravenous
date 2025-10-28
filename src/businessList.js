@@ -1,10 +1,10 @@
-import React from 'react';
+import webkitchen from './Webkitchen.png';
 import Business from './business';
 
 function BusinessList(){
     const businesses = [
         {
-            imageSrc: "Picture",
+            imageSrc: webkitchen,
             name: "Name",
             address: "Address",
             city: "City",
