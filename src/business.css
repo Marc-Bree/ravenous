@@ -1,0 +1,52 @@
+.business {
+    width: 400px;
+    min-height: 380px;
+    margin: 12px auto;
+    padding: 16px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.businessImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.businessImg img {
+    max-width: 100%;
+    max-height: 240px;    
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.businessTitle {
+    text-align: left;
+    font-size: 20px;
+    margin: 8px 0 12px;
+}
+
+.businessRow {
+    display: grid;
+    grid-template-columns: 1fr auto;  
+    align-items: baseline;
+    gap: 12px;
+    margin: 6px 0;
+}
+
+.businessRow .left {
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+.businessRow .right {
+    text-align: right;
+    white-space: nowrap;
+    color: #333;
+    font-weight: 600;
+}

@@ -1,0 +1,52 @@
+.searchBar {
+  padding: 24px 6px 12px 6px;
+  background-image: url('./Webkitchen.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top; 
+}
+
+.options {
+  color: white;
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  justify-content: center;
+  padding: 12px;
+}
+
+.options li {
+  cursor: pointer;
+  font-weight: bold;
+  padding-bottom: 4px;
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+
+.inputField {
+    padding: 12px;
+}
+
+.input {
+    margin: 0px 12px;
+    width: 300px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #ececec;
+}
+
+.submitField {
+    padding: 12px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    background-color: #ffb257;
+    color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    font-weight: bold;
+    box-shadow: none;
+    outline: none;
+}
