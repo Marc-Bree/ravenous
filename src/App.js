@@ -1,15 +1,72 @@
-import BusinessList from "./businessList.js";
-import SearchBar from "./searchBar.js";
-import "./App.css"; //Global style
+import BusinessList from "./businessList";
+import SearchBar from "./searchBar";
+import webkitchen from './Webkitchen.png';
+import "./App.css";
 
 function App() {
+    const businesses = [
+      {
+        imageSrc: webkitchen,
+        name: "Name",
+        address: "Address",
+        city: "City",
+        state: "State",
+        zipCode: "ZipCode",
+        category: "Category",
+        rating: "Rating",
+        reviewCount: "ReviewCount"
+      },
+      {
+        imageSrc: webkitchen,
+        name: "Name",
+        address: "Address",
+        city: "City",
+        state: "State",
+        zipCode: "ZipCode",
+        category: "Category",
+        rating: "Rating",
+        reviewCount: "ReviewCount"
+      },
+      {
+        imageSrc: webkitchen,
+        name: "Name",
+        address: "Address",
+        city: "City",
+        state: "State",
+        zipCode: "ZipCode",
+        category: "Category",
+        rating: "Rating",
+        reviewCount: "ReviewCount"
+      },
+      {
+        imageSrc: webkitchen,
+        name: "Name",
+        address: "Address",
+        city: "City",
+        state: "State",
+        zipCode: "ZipCode",
+        category: "Category",
+        rating: "Rating",
+        reviewCount: "ReviewCount"
+      },
+      {
+        imageSrc: webkitchen,
+        name: "Name",
+        address: "Address",
+        city: "City",
+        state: "State",
+        zipCode: "ZipCode",
+        category: "Category",
+        rating: "Rating",
+        reviewCount: "ReviewCount"
+      }
+    ];
+
   return (
     <div className="App">
-      <div className="banner">
-        Ravenous
-      </div>
+      <div className="banner">Ravenous</div>
       <SearchBar />
-      <BusinessList />
+      <BusinessList businesses={businesses} />
     </div>
   );
 }

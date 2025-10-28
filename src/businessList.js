@@ -1,20 +1,7 @@
-import webkitchen from './Webkitchen.png';
 import Business from './business';
+import './businessList.css';
 
-function BusinessList(){
-    const businesses = [
-        {
-            imageSrc: webkitchen,
-            name: "Name",
-            address: "Address",
-            city: "City",
-            state: "State",
-            zipCode: "ZipCode",
-            category: "Category",
-            rating: "Rating",
-            reviewCount: "ReviewCount"
-        }
-    ];
+function BusinessList({ businesses }){
     return (
         <div className="business-list">
             {businesses.map((b, i) => (
