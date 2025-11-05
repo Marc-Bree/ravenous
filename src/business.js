@@ -1,6 +1,6 @@
 import './business.css';
 
-function Business({ data }){
+export default function Business({ data }){
   return (
     <div className="business">
       <div className="businessImg">
@@ -25,5 +25,3 @@ function Business({ data }){
     </div>
   );
 }
-
-export default Business;

@@ -1,6 +1,6 @@
 .searchBar {
   padding: 24px 6px 12px 6px;
-  background-image: url('./Webkitchen.png');
+  background-image: url('./assets/Webkitchen.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top; 
@@ -49,4 +49,9 @@ button {
     font-weight: bold;
     box-shadow: none;
     outline: none;
+}
+
+.options li.active {
+  color: #ffb257;
+  border-bottom: 2px solid #ffb257;
 }

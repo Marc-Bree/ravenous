@@ -1,7 +1,7 @@
 import Business from './business';
 import './businessList.css';
 
-function BusinessList({ businesses }){
+export default function BusinessList({ businesses }){
     return (
         <div className="business-list">
             {businesses.map((b, i) => (
@@ -10,5 +10,3 @@ function BusinessList({ businesses }){
         </div>
     );
 }
-
-export default BusinessList;

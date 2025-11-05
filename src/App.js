@@ -1,6 +1,6 @@
 import BusinessList from "./businessList";
 import SearchBar from "./searchBar";
-import webkitchen from './Webkitchen.png';
+import webkitchen from './assets/Webkitchen.png';
 import "./App.css";
 
 function App() {
