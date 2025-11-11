@@ -69,3 +69,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # ravenous
+
+## Purpose
+This project lets users search the web for local restaurants and displays their address and rating using the Yelp API
+
+## Technologies used
+- React
+- Javascript
+- HTML
+- CSS
+- Yelp API
+- Git
+
+## Features
+- Search businesses by term, location and sortBy
+- Display for business details in a sorted and neat way
+- Smooth flow when updating the search
+
+## Future work
+- Implement a click action to direct the user to the business website or booking system
+- Add a favorite page to add your favorite places to
+- Add and is open button to see if the business is open now and display opening times
