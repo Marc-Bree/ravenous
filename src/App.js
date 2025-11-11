@@ -1,72 +1,26 @@
 import BusinessList from "./businessList";
 import SearchBar from "./searchBar";
-import webkitchen from './assets/Webkitchen.png';
+import { getTerm } from "./utils";
+import { useState } from "react";
 import "./App.css";
 
 function App() {
-    const businesses = [
-      {
-        imageSrc: webkitchen,
-        name: "Name",
-        address: "Address",
-        city: "City",
-        state: "State",
-        zipCode: "ZipCode",
-        category: "Category",
-        rating: "Rating",
-        reviewCount: "ReviewCount"
-      },
-      {
-        imageSrc: webkitchen,
-        name: "Name",
-        address: "Address",
-        city: "City",
-        state: "State",
-        zipCode: "ZipCode",
-        category: "Category",
-        rating: "Rating",
-        reviewCount: "ReviewCount"
-      },
-      {
-        imageSrc: webkitchen,
-        name: "Name",
-        address: "Address",
-        city: "City",
-        state: "State",
-        zipCode: "ZipCode",
-        category: "Category",
-        rating: "Rating",
-        reviewCount: "ReviewCount"
-      },
-      {
-        imageSrc: webkitchen,
-        name: "Name",
-        address: "Address",
-        city: "City",
-        state: "State",
-        zipCode: "ZipCode",
-        category: "Category",
-        rating: "Rating",
-        reviewCount: "ReviewCount"
-      },
-      {
-        imageSrc: webkitchen,
-        name: "Name",
-        address: "Address",
-        city: "City",
-        state: "State",
-        zipCode: "ZipCode",
-        category: "Category",
-        rating: "Rating",
-        reviewCount: "ReviewCount"
-      }
-    ];
+  const [data, setData] = useState([]);
+
+  const searchYelp = (term, location, sortBy) => {
+    console.log('API loading!');
+    getTerm(term, location, sortBy).then(businesses => {
+      console.log(businesses);
+      console.log('200, API finished loading!');
+      setData(businesses);
+    });
+  }
 
   return (
     <div className="App">
       <div className="banner">Ravenous</div>
-      <SearchBar />
-      <BusinessList businesses={businesses} />
+      <SearchBar searchYelp={searchYelp} />
+      <BusinessList businesses={data} />
     </div>
   );
 }

@@ -1,12 +1,13 @@
 import './searchBar.css';
 import { useState, useEffect } from 'react';
 
-export default function SearchBar() {
+export default function SearchBar({ searchYelp }) {
 
   const [term, setTerm] = useState('');
   function changeTerm(e) {
     setTerm(e.target.value);
   }
+  
   const [location, setLocation] = useState('');
   function changeLocation(e) {
     setLocation(e.target.value);
@@ -25,6 +26,7 @@ export default function SearchBar() {
 
   function searchFeedback() {
     console.log(`Searching Yelp with ${term}, ${location}, ${sortBy}`);
+    searchYelp(term, location, sortBy);
   }
 
   const options = {

@@ -4,7 +4,7 @@ export default function Business({ data }){
   return (
     <div className="business">
       <div className="businessImg">
-        <img src={data.imageSrc} alt={data.name} />
+        <img src={data.imageUrl} alt={data.name} />
       </div>
 
       <h2 className="businessTitle">{data.name}</h2>

@@ -26,6 +26,8 @@
 }
 
 .businessTitle {
+    color: #ffb257;
+    border-bottom: 2px solid #ffb257;
     text-align: left;
     font-size: 20px;
     margin: 8px 0 12px;
